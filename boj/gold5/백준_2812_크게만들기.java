@@ -24,6 +24,7 @@ public class 백준_2812_크게만들기 {
 		for (int i = 1; i < num.length(); i++) {
 			int n = num.charAt(i) - '0';
 
+			while (!stack.isEmpty() && flag) {
 				if (cnt == K) { // 종료조건
 					flag = false;
 					break;
